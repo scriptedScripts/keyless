@@ -1,7 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
@@ -40,6 +36,14 @@ local anitafk = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
 local Noclip = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local destroy = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local CTRL = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local vault = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
 local remove = Instance.new("TextButton")
 local add = Instance.new("TextButton")
 
@@ -53,23 +57,23 @@ Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Main.BackgroundTransparency = 0.200
 Main.BorderSizePixel = 5
-Main.Position = UDim2.new(0.372125894, 0, 0.189264417, 0)
-Main.Size = UDim2.new(0, 230, 0, 26)
+Main.Position = UDim2.new(0.372125924, 0, 0.189264417, 0)
+Main.Size = UDim2.new(0, 293, 0, 26)
 
 Gui.Name = "Gui"
 Gui.Parent = Main
 Gui.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Gui.BackgroundTransparency = 0.200
 Gui.BorderSizePixel = 5
-Gui.Position = UDim2.new(0.00364061445, 0, 1.30006349, 0)
-Gui.Size = UDim2.new(0, 230, 0, 255)
+Gui.Position = UDim2.new(0.00364061445, 0, 1.30006325, 0)
+Gui.Size = UDim2.new(0, 291, 0, 255)
 
 Watermark.Name = "Water mark"
 Watermark.Parent = Gui
 Watermark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Watermark.BackgroundTransparency = 1.000
-Watermark.Position = UDim2.new(4.65661287e-10, 0, 0.816955447, 0)
-Watermark.Size = UDim2.new(0, 232, 0, 50)
+Watermark.Position = UDim2.new(0, 0, 0.816955447, 0)
+Watermark.Size = UDim2.new(0, 291, 0, 50)
 Watermark.Font = Enum.Font.SourceSans
 Watermark.Text = "@just a pufferfish#6969"
 Watermark.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -113,8 +117,8 @@ Farmshoe.Name = "Farm shoe"
 Farmshoe.Parent = Gui
 Farmshoe.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
 Farmshoe.BackgroundTransparency = 0.200
-Farmshoe.Position = UDim2.new(0.679565191, 0, -0.00348622096, 0)
-Farmshoe.Size = UDim2.new(0, 73, 0, 52)
+Farmshoe.Position = UDim2.new(0.545544624, 0, -0.00348624424, 0)
+Farmshoe.Size = UDim2.new(0, 56, 0, 52)
 Farmshoe.Font = Enum.Font.SourceSans
 Farmshoe.Text = "Farm shoe"
 Farmshoe.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -129,7 +133,7 @@ SeverHop.Name = "SeverHop"
 SeverHop.Parent = Gui
 SeverHop.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
 SeverHop.BackgroundTransparency = 0.200
-SeverHop.Position = UDim2.new(0.353478193, 0, 0.257775038, 0)
+SeverHop.Position = UDim2.new(0.250385404, 0, 0.257775038, 0)
 SeverHop.Size = UDim2.new(0, 67, 0, 52)
 SeverHop.Font = Enum.Font.SourceSans
 SeverHop.Text = "SeverHop"
@@ -145,7 +149,7 @@ discord.Name = "discord"
 discord.Parent = Gui
 discord.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
 discord.BackgroundTransparency = 0.200
-discord.Position = UDim2.new(0.353478193, 0, -0.00348615227, 0)
+discord.Position = UDim2.new(0.274440378, 0, -0.00740772113, 0)
 discord.Size = UDim2.new(0, 67, 0, 52)
 discord.Modal = true
 discord.Font = Enum.Font.SourceSans
@@ -162,7 +166,7 @@ loopmute.Name = "loopmute"
 loopmute.Parent = Gui
 loopmute.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
 loopmute.BackgroundTransparency = 0.200
-loopmute.Position = UDim2.new(0.705652118, 0, 0.257775038, 0)
+loopmute.Position = UDim2.new(0.509775817, 0, 0.257775038, 0)
 loopmute.Size = UDim2.new(0, 67, 0, 52)
 loopmute.Font = Enum.Font.SourceSans
 loopmute.Text = "loop mute all"
@@ -194,7 +198,7 @@ bank.Name = "bank"
 bank.Parent = Gui
 bank.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
 bank.BackgroundTransparency = 0.200
-bank.Position = UDim2.new(0.349130362, 0, 0.697149754, 0)
+bank.Position = UDim2.new(0.249474004, 0, 0.697149754, 0)
 bank.Size = UDim2.new(0, 67, 0, 40)
 bank.Font = Enum.Font.SourceSans
 bank.Text = "Goto bank"
@@ -210,7 +214,7 @@ rocket.Name = "rocket"
 rocket.Parent = Gui
 rocket.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
 rocket.BackgroundTransparency = 0.200
-rocket.Position = UDim2.new(0.705652118, 0, 0.697149754, 0)
+rocket.Position = UDim2.new(0.509775817, 0, 0.697149754, 0)
 rocket.Size = UDim2.new(0, 67, 0, 40)
 rocket.Font = Enum.Font.SourceSans
 rocket.Text = "Goto rocket launcher"
@@ -315,7 +319,7 @@ anitafk.Name = "anit afk"
 anitafk.Parent = Gui
 anitafk.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
 anitafk.BackgroundTransparency = 0.200
-anitafk.Position = UDim2.new(0.357826024, 0, 0.48538506, 0)
+anitafk.Position = UDim2.new(0.244423956, 0, 0.48538506, 0)
 anitafk.Size = UDim2.new(0, 67, 0, 41)
 anitafk.Font = Enum.Font.SourceSans
 anitafk.Text = "Anti Afk"
@@ -331,7 +335,7 @@ Noclip.Name = "Noclip"
 Noclip.Parent = Gui
 Noclip.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
 Noclip.BackgroundTransparency = 0.200
-Noclip.Position = UDim2.new(0.701304317, 0, 0.48538506, 0)
+Noclip.Position = UDim2.new(0.508864462, 0, 0.48538506, 0)
 Noclip.Size = UDim2.new(0, 67, 0, 41)
 Noclip.Font = Enum.Font.SourceSans
 Noclip.Text = "Noclip \"E\""
@@ -342,6 +346,70 @@ Noclip.TextTransparency = 0.200
 Noclip.TextWrapped = true
 
 UICorner_16.Parent = Noclip
+
+ESP.Name = "ESP"
+ESP.Parent = Gui
+ESP.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
+ESP.BackgroundTransparency = 0.200
+ESP.Position = UDim2.new(0.766715944, 0, 0.257775038, 0)
+ESP.Size = UDim2.new(0, 67, 0, 52)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "Esp"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextTransparency = 0.200
+ESP.TextWrapped = true
+
+UICorner_17.Parent = ESP
+
+destroy.Name = "destroy"
+destroy.Parent = Gui
+destroy.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
+destroy.BackgroundTransparency = 0.200
+destroy.Position = UDim2.new(0.790770829, 0, -0.00889162533, 0)
+destroy.Size = UDim2.new(0, 60, 0, 52)
+destroy.Font = Enum.Font.SourceSans
+destroy.Text = "Destroy UI"
+destroy.TextColor3 = Color3.fromRGB(0, 0, 0)
+destroy.TextScaled = true
+destroy.TextSize = 14.000
+destroy.TextTransparency = 0.200
+destroy.TextWrapped = true
+
+UICorner_18.Parent = destroy
+
+CTRL.Name = "CTRL"
+CTRL.Parent = Gui
+CTRL.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
+CTRL.BackgroundTransparency = 0.200
+CTRL.Position = UDim2.new(0.766596437, 0, 0.48538506, 0)
+CTRL.Size = UDim2.new(0, 67, 0, 41)
+CTRL.Font = Enum.Font.SourceSans
+CTRL.Text = "Ctrl click Tp"
+CTRL.TextColor3 = Color3.fromRGB(0, 0, 0)
+CTRL.TextScaled = true
+CTRL.TextSize = 14.000
+CTRL.TextTransparency = 0.200
+CTRL.TextWrapped = true
+
+UICorner_19.Parent = CTRL
+
+vault.Name = "vault"
+vault.Parent = Gui
+vault.BackgroundColor3 = Color3.fromRGB(0, 225, 0)
+vault.BackgroundTransparency = 0.200
+vault.Position = UDim2.new(0.764071345, 0, 0.697149754, 0)
+vault.Size = UDim2.new(0, 67, 0, 40)
+vault.Font = Enum.Font.SourceSans
+vault.Text = "Goto bank vault"
+vault.TextColor3 = Color3.fromRGB(0, 0, 0)
+vault.TextScaled = true
+vault.TextSize = 14.000
+vault.TextTransparency = 0.200
+vault.TextWrapped = true
+
+UICorner_20.Parent = vault
 
 remove.Name = "remove"
 remove.Parent = Main
@@ -370,7 +438,7 @@ add.TextWrapped = true
 
 -- Scripts:
 
-local function YRZYLUD_fake_script() -- ScreenGui.Script 
+local function LERWDFV_fake_script() -- ScreenGui.Script 
 	local script = Instance.new('Script', ScreenGui)
 
 	local Main = script.Parent.Main -- Change this to your GUI name
@@ -379,48 +447,48 @@ local function YRZYLUD_fake_script() -- ScreenGui.Script
 	Main.Active = true
 	
 end
-coroutine.wrap(YRZYLUD_fake_script)()
-local function GYCO_fake_script() -- Farmhospital.main 
+coroutine.wrap(LERWDFV_fake_script)()
+local function MUWIZ_fake_script() -- Farmhospital.main 
 	local script = Instance.new('Script', Farmhospital)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/v4FXNSgF'),true))()
 	end)
 end
-coroutine.wrap(GYCO_fake_script)()
-local function KXZNR_fake_script() -- loopvoidyourself.main 
+coroutine.wrap(MUWIZ_fake_script)()
+local function HFEFRKU_fake_script() -- loopvoidyourself.main 
 	local script = Instance.new('Script', loopvoidyourself)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/EveVhTU9'),true))()
 	end)
 end
-coroutine.wrap(KXZNR_fake_script)()
-local function HQBHAL_fake_script() -- Farmshoe.main 
+coroutine.wrap(HFEFRKU_fake_script)()
+local function DMKFU_fake_script() -- Farmshoe.main 
 	local script = Instance.new('Script', Farmshoe)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SenseiJoshy/Extras/main/DaHood%20ShoeFarm.lua"))()
 	end)
 end
-coroutine.wrap(HQBHAL_fake_script)()
-local function FCAZH_fake_script() -- SeverHop.main 
+coroutine.wrap(DMKFU_fake_script)()
+local function VIVI_fake_script() -- SeverHop.main 
 	local script = Instance.new('Script', SeverHop)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/3ZUneMNy'),true))()
 	end)
 end
-coroutine.wrap(FCAZH_fake_script)()
-local function WPZL_fake_script() -- discord.main 
+coroutine.wrap(VIVI_fake_script)()
+local function NJIIAH_fake_script() -- discord.main 
 	local script = Instance.new('Script', discord)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/bdDThDpP'),true))()
 	end)
 end
-coroutine.wrap(WPZL_fake_script)()
-local function IZZKW_fake_script() -- discord.copied 
+coroutine.wrap(NJIIAH_fake_script)()
+local function QPHVG_fake_script() -- discord.copied 
 	local script = Instance.new('Script', discord)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -429,96 +497,128 @@ local function IZZKW_fake_script() -- discord.copied
 		script.Parent.Parent.discord.Text = "Discord sever"
 	end)
 end
-coroutine.wrap(IZZKW_fake_script)()
-local function YTNGXBA_fake_script() -- loopmute.main 
+coroutine.wrap(QPHVG_fake_script)()
+local function KXDXVE_fake_script() -- loopmute.main 
 	local script = Instance.new('Script', loopmute)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/m6r1cKtk'),true))()
 	end)
 end
-coroutine.wrap(YTNGXBA_fake_script)()
-local function QAUB_fake_script() -- guns.main 
+coroutine.wrap(KXDXVE_fake_script)()
+local function WOXCEK_fake_script() -- guns.main 
 	local script = Instance.new('Script', guns)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/EXM3Dt1g'),true))()
 	end)
 end
-coroutine.wrap(QAUB_fake_script)()
-local function BXOVNCC_fake_script() -- bank.main 
+coroutine.wrap(WOXCEK_fake_script)()
+local function TLFJXJJ_fake_script() -- bank.main 
 	local script = Instance.new('Script', bank)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/M7U04KDE'),true))()
 	end)
 end
-coroutine.wrap(BXOVNCC_fake_script)()
-local function EGJHKM_fake_script() -- rocket.main 
+coroutine.wrap(TLFJXJJ_fake_script)()
+local function XEMSDX_fake_script() -- rocket.main 
 	local script = Instance.new('Script', rocket)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/VXVtyFFk'),true))()
 	end)
 end
-coroutine.wrap(EGJHKM_fake_script)()
-local function NTXSUES_fake_script() -- tps.main 
+coroutine.wrap(XEMSDX_fake_script)()
+local function RNDQ_fake_script() -- tps.main 
 	local script = Instance.new('Script', tps)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.Parent.Parent.Tps.Visible = true
 	end)
 end
-coroutine.wrap(NTXSUES_fake_script)()
-local function GJFIB_fake_script() -- Phone.main 
+coroutine.wrap(RNDQ_fake_script)()
+local function TOXVBB_fake_script() -- Phone.main 
 	local script = Instance.new('Script', Phone)
 
 	script.Parent.MouseButton1Click:connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-122.52713012695, 22.125370025635, -873.95684814453)
 	end)
 end
-coroutine.wrap(GJFIB_fake_script)()
-local function EHINZA_fake_script() -- Close.main 
+coroutine.wrap(TOXVBB_fake_script)()
+local function BPYE_fake_script() -- Close.main 
 	local script = Instance.new('Script', Close)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.Parent.Parent.Parent.Tps.Visible = false
 	end)
 end
-coroutine.wrap(EHINZA_fake_script)()
-local function FXQW_fake_script() -- DaFur.main 
+coroutine.wrap(BPYE_fake_script)()
+local function JGSYVR_fake_script() -- DaFur.main 
 	local script = Instance.new('Script', DaFur)
 
 	script.Parent.MouseButton1Click:connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-490.26382446289, 22.074695587158, -114.9740447998)
 	end)
 end
-coroutine.wrap(FXQW_fake_script)()
-local function GVTOXX_fake_script() -- HoodKicks.main 
+coroutine.wrap(JGSYVR_fake_script)()
+local function UUZVC_fake_script() -- HoodKicks.main 
 	local script = Instance.new('Script', HoodKicks)
 
 	script.Parent.MouseButton1Click:connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-205.07341003418, 22.036581039429, -409.54064941406)
 	end)
 end
-coroutine.wrap(GVTOXX_fake_script)()
-local function BFYZN_fake_script() -- anitafk.main 
+coroutine.wrap(UUZVC_fake_script)()
+local function EEQFWAE_fake_script() -- anitafk.main 
 	local script = Instance.new('Script', anitafk)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/QyVFh8Vh'),true))()
 	end)
 end
-coroutine.wrap(BFYZN_fake_script)()
-local function GULEZPN_fake_script() -- Noclip.main 
+coroutine.wrap(EEQFWAE_fake_script)()
+local function XJSFXDD_fake_script() -- Noclip.main 
 	local script = Instance.new('Script', Noclip)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/wiU3XSBU'),true))()
 	end)
 end
-coroutine.wrap(GULEZPN_fake_script)()
-local function HQUGVQL_fake_script() -- remove.Script 
+coroutine.wrap(XJSFXDD_fake_script)()
+local function KXQGDNC_fake_script() -- ESP.main 
+	local script = Instance.new('Script', ESP)
+
+	script.Parent.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/GGrLn6dv'),true))()
+	end)
+end
+coroutine.wrap(KXQGDNC_fake_script)()
+local function DZWL_fake_script() -- destroy.main 
+	local script = Instance.new('Script', destroy)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Parent.Parent.Main:Destroy()
+	end)
+end
+coroutine.wrap(DZWL_fake_script)()
+local function DBZUFV_fake_script() -- CTRL.main 
+	local script = Instance.new('Script', CTRL)
+
+	script.Parent.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/s9RU0AeX'),true))()
+	end)
+end
+coroutine.wrap(DBZUFV_fake_script)()
+local function UUUQ_fake_script() -- vault.main 
+	local script = Instance.new('Script', vault)
+
+	script.Parent.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/f4Ub1dvi'),true))()
+	end)
+end
+coroutine.wrap(UUUQ_fake_script)()
+local function XSRGHC_fake_script() -- remove.Script 
 	local script = Instance.new('Script', remove)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -527,8 +627,8 @@ local function HQUGVQL_fake_script() -- remove.Script
 		script.Parent.Parent.remove.Visible = false
 	end)
 end
-coroutine.wrap(HQUGVQL_fake_script)()
-local function GKAJM_fake_script() -- add.Script 
+coroutine.wrap(XSRGHC_fake_script)()
+local function KIBFX_fake_script() -- add.Script 
 	local script = Instance.new('Script', add)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -537,4 +637,4 @@ local function GKAJM_fake_script() -- add.Script
 		script.Parent.Parent.remove.Visible = true
 	end)
 end
-coroutine.wrap(GKAJM_fake_script)()
+coroutine.wrap(KIBFX_fake_script)()
